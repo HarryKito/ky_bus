@@ -1,9 +1,6 @@
-# ky carfull cost exchanger
+# ky 버스타고 탈출하기
 
-## https://harrykito.github.io/ky_carfull_cost_exchanger/
-
-#### W3C HTML Validator page
-## https://validator.w3.org/
-
-#### git
-## https://github.com/HarryKito/WebPractice.git
+## 해야할 일 TODO
+- 모바일 UI 최적화 문제
+- GA google analytics
+- <a href 페이지 연결
