@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   20200906 ~ Haiiron // 전현배
+*/
+
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre, a, abbr, acronym, address,
+big, cite, code, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong, sub, sup,
+tt, var, b, u, i, center,
+dl, dt, dd, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	line-height:150%;
+	text-align: center;
+	list-style:none;
+	text-decoration:none;
+	font-family:sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+{display: block;}
+
+body
+{
+	background-image: url('../images/bg.jpg'); /* 소스출처 https://pixabay.com/photos/vanlife-van-box-car-camper-5130072/ */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	line-height: 1;
+}
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1
+{font-size:8vw;}
+
+a
+{
+	background-color: #4CAF50; /* Green */
+  	border: 2px solid;
+	margin-top:10px;
+	width: 150px;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 20px;
+}
+
+img
+{
+	max-width:100%;
+	height:auto;
+}
+
+input[type=number]
+{
+	width: 45%;
+	margin:5%;
+	height: 70px;
+	font-size:20px;
+	background-color: #DAF7A6;
+}
+
+*
+{box-sizing:border-box;}
+
+header
+{
+	vertical-align: baseline;
+	background-color: rgba(146, 168, 209,.7);
+	display: flex;
+}
+
+.contents
+{
+	height: 100%;
+	display: flex;
+	padding: auto;
+}
+
+.main
+{
+background-color: khaki;
+margin:auto;
+width: 50%;
+height: 800px;
+padding: 20px;
+border-radius: 25px 25px 10px 10px;
+}
+
+.from
+{
+	text-align: right;
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+}
+
+.to
+{
+	text-align: left;
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+}
+/* 칸막이 */
+.interval
+{height: 45px;}
