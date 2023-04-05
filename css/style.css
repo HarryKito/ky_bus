@@ -34,34 +34,25 @@ footer, header, hgroup, menu, nav, section
 
 body
 {
-	background-image: url('../images/bg.jpg'); /* 소스출처 https://pixabay.com/photos/vanlife-van-box-car-camper-5130072/ */
+	background-image: url('../images/bg.jpg'); /* 소스출처 픽사베이 */
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	line-height: 1;
-}
-
-table
-{
-	border-collapse: collapse;
-	border-spacing: 0;
 }
 
 h1
 {font-size:8vw;}
 
-a
+a /* 사용자 주요 기능버튼 */
 {
 	background-color: #4CAF50; /* Green */
-  	border: 2px solid;
-	margin-top:10px;
-	width: 150px;
+  	border: 1px solid;
+	padding: 1em;
+	margin:5px;
+	width: 70%;
   	color: white;
-  	padding: 15px 32px;
-  	text-align: center;
-  	text-decoration: none;
   	display: inline-block;
-  	font-size: 2vw;
+  	font-size: 3vw;
 }
 
 img
@@ -100,8 +91,8 @@ header
 {
 background-color: khaki;
 margin:auto;
-width: 50%;
-height: 800px;
+width: 80%;
+height: 50%;
 padding: 20px;
 border-radius: 25px 25px 10px 10px;
 }
@@ -109,7 +100,7 @@ border-radius: 25px 25px 10px 10px;
 .from
 {
 	text-align: right;
-	display: inline-block;
+	display: table-column;
 	width: 50%;
 	height: 100%;
 }
@@ -117,10 +108,10 @@ border-radius: 25px 25px 10px 10px;
 .to
 {
 	text-align: left;
-	display: inline-block;
+	display: table-row;
 	width: 50%;
 	height: 100%;
 }
 /* 칸막이 */
 .interval
-{height: 45px;}
+{height: 25px;}
