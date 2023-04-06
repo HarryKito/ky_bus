@@ -1,13 +1,3 @@
-# ky 버스타고 탈출하기
-
-## 아이디어! 이건 어떨까?
-
-> 현재시간 기준 가장 가까운 버스 시간표
-> > ex 현재 12시
-
-
-번호 | 예정 도착시간 |
-981 |  12:05    |
-80  +  12:10    +
+# Escape kyungWoon with Bus
 
 ### https://lighthearted-pie-569b9e.netlify.app/

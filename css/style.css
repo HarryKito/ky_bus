@@ -55,21 +55,6 @@ a /* 사용자 주요 기능버튼 */
   	font-size: 3vw;
 }
 
-img
-{
-	max-width:100%;
-	height:auto;
-}
-
-input[type=number]
-{
-	width: 45%;
-	margin:5%;
-	height: 70px;
-	font-size:20px;
-	background-color: #DAF7A6;
-}
-
 *
 {box-sizing:border-box;}
 
@@ -80,21 +65,21 @@ header
 	display: flex;
 }
 
-.contents
-{
-	height: 100%;
-	display: flex;
-	padding: auto;
-}
-
 .main
 {
 background-color: khaki;
 margin:auto;
 width: 80%;
 height: 50%;
-padding: 20px;
-border-radius: 25px 25px 10px 10px;
+padding: 5px 20px 20px 20px;
+border-radius: 25px;
+}
+
+.contents
+{
+	height: 100%;
+	display: flex;
+	padding: auto;
 }
 
 .from
