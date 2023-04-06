@@ -34,25 +34,26 @@ footer, header, hgroup, menu, nav, section
 
 body
 {
-	background-image: url('../images/bg.jpg'); /* 소스출처 픽사베이 */
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 }
 
 h1
-{font-size:8vw;}
+{font-size:8vw;
+ color: white;
+}
 
 a /* 사용자 주요 기능버튼 */
 {
-	background-color: #4CAF50; /* Green */
-  	border: 1px solid;
+	background-color: #007aff; /* Green */
+  	border: 2px solid;
 	padding: 1em;
 	margin:5px;
 	width: 70%;
   	color: white;
   	display: inline-block;
-  	font-size: 3vw;
+  	font-size: 4vw;
 }
 
 *
@@ -61,7 +62,7 @@ a /* 사용자 주요 기능버튼 */
 header
 {
 	vertical-align: baseline;
-	background-color: rgba(146, 168, 209,.7);
+	background-color: #007aff;
 	display: flex;
 }
 
@@ -99,4 +100,66 @@ border-radius: 25px;
 }
 /* 칸막이 */
 .interval
-{height: 25px;}
+{height: 15px;}
+
+.container {
+	display: flex;
+	align-items: center;
+}
+
+.image {
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.text h1 {
+	margin: 0;
+}
+
+.text p {
+	margin: 0;
+	font-size: 16px;
+	color: #666;
+}
+
+.banner {
+	background-color: #007aff;
+	color: white;
+	text-align: center;
+	padding: 25px;
+  }
+  
+  .banner h1 {
+	margin-top: 0;
+	line-height: 1.2;
+  }
+  
+  .banner p {
+	font-size: 24px;
+  }
+  
+  .banner button {
+	background-color:	#FEE500;
+	border: none;
+	color: #3C1E1E;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 20px; /* 버튼 둥글게 만드는 속성 */
+	cursor: pointer;
+	transition: background-color 0.5s;
+  }
+  
+  .banner button:hover {
+	background-color: #1abc9c;
+	color: white;
+  }
+
+  
+
+
+
+  
+  
+  
+  
