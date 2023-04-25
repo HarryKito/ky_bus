@@ -10,17 +10,7 @@
   <link rel="stylesheet" type="text/css" href="./css/style.css"/>
   <script type="text/javascript" src="./script/script.js"></script>
 
-  <title>경운대학교 버스 시간표 MATE 23.</title>
-  
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R8TBWVKD98"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-R8TBWVKD98');
-</script>
+  <title>경운대학교 버스 시간표</title>
 
 </head>
 <body style="height: 100%;">
@@ -28,23 +18,17 @@
 
     <div class="container">
       <div class="image">
-        <img src="images/logo.png" alt="로고 이미지">
-      </div>
-      <div class="text">
-        <h1>경운대 버스 시간표</h1>
+        <img src="images/menu.png" alt="메뉴 이미지">
       </div>
     </div>
   </header>
 
-  <div class="interval"></div>
-
-  <div class="banner">
-    <h1>이런 동아리를 원한다면?</h1>
-    <p>카카오톡으로 문의해봐요!</p>
-    <button onclick="window.location.href='https://open.kakao.com/o/s9OH2gje'">카카오톡으로 문의</button>
+  <div style="display: flex;">
+        <h3 id="time">현재시간 : --:-- </h3>
+        <h3>날씨 | 맑음</h3>
+        <h3>온도 | 38.5°C</h3>
+        <h3 style="width: 100px;">미세먼지 |</h3><h3 style="background-color: red;width:20px;height: 20px;"></h3><h3 style="width: 80px;">매우나쁨</h3>
   </div>
-
-  <div class="interval"></div>
 
   <div class ="main">
     <div class="contents_title">
@@ -106,6 +90,8 @@
       </div>
     </div>
   </div>
-
+  <footer>
+      <h1>경운대 버스 시간표</h1>
+  </footer>
 </body>
 </html>
