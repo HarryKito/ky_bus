@@ -11,7 +11,7 @@ dropdown 구현해서 버스번호 누르면 버스 시간표 출력, 바깥쪽 
 dropdown 참고
 https://www.w3schools.com/css/css_dropdowns.asp
 
-접근성 검사
+### 접근성 검사
 https://wave.webaim.org/
-유효성 검사
+### 유효성 검사
 https://validator.w3.org/
