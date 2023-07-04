@@ -24,17 +24,18 @@ xhr.onreadystatechange = function ()
 
 function showTime()
 {
-	const curr = new Date();
-document.writeln("현재시간(Locale) : " + curr + '<br>');
-
-// 2. UTC 시간 계산
-const utc = curr.getTime() + (curr.getTimezoneOffset() * 60 * 1000);
+	const utcClock = curr.getTime() + (curr.getTimezoneOffset() * 60 * 1000);
 
 // 3. UTC to KST (UTC + 9시간)
 const KR_TIME_DIFF = 9 * 60 * 60 * 1000;
-const kr_curr = new Date(utc + (KR_TIME_DIFF));
+const kr_curr = new Date(utcClock + (KR_TIME_DIFF));
 
-document.writeln("한국시간 : " + kr_curr);
+const yoil = kr_curr.getDay();
+const hour = kr_curr.getHours();
+const minutes = kr_curr.getMinutes();
+const sec = kr_curr.getSeconds();
+
+document.writeln("현재시간 : " +hour+ " : "+minutes+" : "+sec+ " " + yoil);
 }
 
 getdata()
