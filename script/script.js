@@ -35,7 +35,8 @@ const hour = kr_curr.getHours();
 const minutes = kr_curr.getMinutes();
 const sec = kr_curr.getSeconds();
 
-document.writeln("현재시간 : " +hour+ " : "+minutes+" : "+sec+ " " + yoil);
+//document.writeln("현재시간 : " +hour+ " : "+minutes+" : "+sec+ " " + yoil);
+document.writeln(hour);
 }
 
 getdata()
