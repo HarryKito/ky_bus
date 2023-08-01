@@ -41,23 +41,23 @@ document.writeln(hour);
 
 getdata()
 
-function showBus()
-{
-	const fromUniv196 = [0,0];
-	const toUniv196 = [0,0];
-	const fromUniv74_1 =[0,0];
-	const toUniv74_1 = [0,0];
-	const fromUniv80 = [0,0];
-	const toUniv80 = [0,0];
-	const fromUniv883_1 = [0,0];
-	const toUniv883_1 = [0,0];
-	const fromUniv884_1 = [0,0];
-	const toUniv884_1 = [0,0];
-	const fromUniv891_1 = [0,0];
-	const toUniv891_1 = [0,0];
-	const fromUniv92_1 = [0,0];
-	const toUniv92_1 = [0,0];
-	const fromUniv92_2 = [0,0];
-	const toUniv92_2 = [0,0];
+const options = {
+		enableHighAccuracy: true,
+		timeout : 5000,
+		maximumAge: 0,		
+};
+
+function success(pos) {
+	const crd = pos.coords;
+	
+	console.log("your current position is : ");
+	console.log("lat : ${crd.latitude}");
+	console.log("Lon : ${crd.longitude}");
 	
 }
+
+function error(err) {
+	console.warn("ERROR(${err.code}):${err.message}");
+}
+
+navigator.geolocation.getCurrentPosition(success, error, options);
