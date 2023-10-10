@@ -39,7 +39,7 @@ const sec = kr_curr.getSeconds();
 document.writeln(hour);
 }
 
-getdata();
+//getdata();
 
 function showBus()
 {
