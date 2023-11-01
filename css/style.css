@@ -60,6 +60,7 @@ a /* 사용자 주요 기능버튼 */
   	color: white;
   	display: inline-block;
   	font-size: 4vw;
+		border-radius: 10px;
 }
 
 *
