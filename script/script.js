@@ -22,7 +22,7 @@ xhr.onreadystatechange = function ()
 	showTime();
 }
 
-function showTime()
+function showKRTime()
 {
 	const utcClock = curr.getTime() + (curr.getTimezoneOffset() * 60 * 1000);
 
@@ -35,12 +35,18 @@ const hour = kr_curr.getHours();
 const minutes = kr_curr.getMinutes();
 const sec = kr_curr.getSeconds();
 
-//document.writeln("현재시간 : " +hour+ " : "+minutes+" : "+sec+ " " + yoil);
-document.writeln(hour);
+document.writeln("현재시간 : " +hour+ " : "+minutes+" : "+sec);
 }
 
 //getdata();
 
+
+//encoding
+// Timedata = h * 60 + m
+//
+//decoding
+//h = int(Timedata/60)
+//m = Timedata%60
 function showBus()
 {
 	const fromUniv196 = [0,0];
