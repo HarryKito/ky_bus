@@ -1,4 +1,3 @@
-
 @charset "UTF-8";
 /*
 	作・2023/10/10
@@ -6,8 +5,23 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
+@font-face {
+  font-family: '나눔볼드';
+  src: url(../font/NanumGothicExtraBold.otf);
+}
+
+.nanumxb{
+  font-family: '나눔볼드';
+}
+
+.logo-img{
+  height: 56px;
+  width: ;
+}
+
 .navbar-brand{
 background-color: white;
+font-family: 'NanumGothicExtraBold';
 }
 
 .navbar-toggle{
@@ -20,20 +34,10 @@ background-color: white;
 
 
 
-
-/* 드롭다운 메뉴 슬라이딩 애니메이션 */
-.navbar-toggle .dropdown-menu {
-  position: absolute;
-  top: 56px; /* 네비게이션 바의 높이에 맞게 조절 */
-  right: -100%; /* 초기에 왼쪽에 숨겨진 상태 */
+.sidebar{
   height: 100vw;
+  width: 100vw;
 }
-
-.navbar-toggle.show .dropdown-menu {
-  right: 0; /* 표시될 때 왼쪽으로 슬라이딩 */
-  transition: all 1s;
-}
-
 
 
 
