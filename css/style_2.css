@@ -16,11 +16,11 @@
 
 .logo-img{
   height: 56px;
-  width: ;
+  /* width: ; */
 }
 
 .navbar-brand{
-background-color: white;
+
 font-family: 'NanumGothicExtraBold';
 }
 
@@ -33,10 +33,21 @@ font-family: 'NanumGothicExtraBold';
 }
 
 
+#sidebar {
+  position: fixed;
+  top: 10vh; /* 상단에서부터 시작 */
+  bottom: 0; /* 하단까지 */
+  right: -100vw; /* 화면 오른쪽 바깥으로 숨겨짐 */
+  width: 100vw; /* 전체 뷰포트 너비 */
+  height: 100vh; /* 전체 뷰포트 높이로 설정 */
+  overflow-x: hidden;
+  transition: all 0.5s; /* 부드러운 전환 효과 */
+  z-index: 1000; /* 다른 콘텐츠 위에 오도록 z-index 설정 */
+  background-color: white; /* 배경색 */
+}
 
-.sidebar{
-  height: 100vw;
-  width: 100vw;
+#sidebar.show {
+  right: 0; /* 사이드바를 화면 오른쪽 끝으로 이동하여 표시 */
 }
 
 

@@ -10,73 +10,61 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-<nav class="navbar bg-body-tertiary container-fluid p-0 ">
+
+<nav class="navbar bg-body-tertiary container-fluid " style="background-color: black;">
   <a class="navbar-brand" href="index_2.html">
-    <img src="../images/Kyungwoonedeul-logo.png" class="logo-img" alt="">
+    <img src="../images/Kyungwoonedeul-logo.png" style="height: 40px;" alt="">
   </a>
-  <!-- 드롭다운 토글 버튼 -->
-  <button class="navbar-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="navbar-toggler-icon" style="font-size: 18px;"></span>
-  </button>
-  <!-- 드롭다운 내용 -->
-  <div class="sidebar dropdown-menu dropdown-menu-end">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-3">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">캠퍼스</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">버스</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          통합정보 시스템 정보
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">등교</a></li>
-          <li><a class="dropdown-item" href="#">하교</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          학생 혜택
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">학생 혜택</a></li>
-          <li><a class="dropdown-item" href="#">통합정보시스템</a></li>
-          <li><a class="dropdown-item" href="#">CopyKiller</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">셔틀버스</a></li>
-        </ul>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
+  <a href="#" data-bs-target="#sidebar" data-bs-toggle="collapse" class="border rounded-3 p-1 text-decoration-none"><i class="bi bi-list bi-lg py-2 p-1"></i> Menu</a>
+
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto px-0">
+          <div id="sidebar" class="collapse collapse-horizontal border-end">
+                <div id="sidebar-nav" class="list-group border-0 rounded-0 text-sm-start min-vh-100 min-vw-100">
+                    <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-bootstrap"></i> <span>Item</span> </a>
+                    <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-film"></i> <span>Item</span></a>
+                    <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-heart"></i> <span>Item</span></a>
+                    <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-bricks"></i> <span>Item</span></a>
+                    <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-clock"></i> <span>Item</span></a>
+                    <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-archive"></i> <span>Item</span></a>
+                    <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-gear"></i> <span>Item</span></a>
+                    <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-calendar"></i> <span>Item</span></a>
+                    <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-envelope"></i> <span>Item</span></a>
+                </div>
+            </div>
+        </div>
+        <main class="col ps-md-2 pt-2">
+            <div class="page-header pt-3">
+                <h2>Bootstrap 5 Sidebar Menu - Simple</h2>
+            </div>
+            <p class="lead">A offcanvas "push" vertical nav menu example.</p>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <p>This is a simple collapsing sidebar menu for Bootstrap 5. Unlike the Offcanvas component that overlays the content, this sidebar will "push" the content. Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf squid tote bag. Tote bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
+                    <p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
 </nav>
 
 <div class="container">
   <div class="box-link">
     <button onclick="window.location.href='index.html';" class="link-button">
-      하교 버스
+      하교버스
     </button>
   </div>
   <div class="box-link">
     <button onclick="window.location.href='index.html';" class="link-button">
-      등교 버스
+      등교버스
     </button>
   </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-<script>
-
-</script>
 
 </body>
 </html>
