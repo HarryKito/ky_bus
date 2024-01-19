@@ -15,6 +15,7 @@
 }
 
 .logo-img{
+  align-items: center;
   height: 56px;
   /* width: ; */
 }
@@ -35,7 +36,7 @@ font-family: 'NanumGothicExtraBold';
 
 #sidebar {
   position: fixed;
-  top: 10vh; /* 상단에서부터 시작 */
+  top: 66px; /* 상단에서부터 시작 */
   bottom: 0; /* 하단까지 */
   right: -100vw; /* 화면 오른쪽 바깥으로 숨겨짐 */
   width: 100vw; /* 전체 뷰포트 너비 */

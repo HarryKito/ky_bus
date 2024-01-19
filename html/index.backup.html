@@ -3,80 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, user-scalable=yes" />
-  <link rel="stylesheet" href="../css/style_2.css">
-  <title>경운이들</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="keywords" content="경운대학교, 경운대, 버스, 시간표">
+  <meta name="author" content="Haiiron / Edward">
+  <meta name="description" content="우리 모두를 위한 경운대학교 버스 시간표입니다!">
+  <meta property="og:title" content="IKW Bus Information">
+  <meta property="og:description" content="대학 버스정보">
+    
+  <link rel="stylesheet" type="text/css" href="../css/style.css"/>
   <script type="text/javascript" src="./script/jquery-3.7.1.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script type="text/javascript" src="./script/script.js"></script>
+
+  <title>경운대학교 버스 시간표</title>
+
 </head>
-<body>
-<nav class="navbar bg-body-tertiary container-fluid p-0 ">
-  <a class="navbar-brand" href="index_2.html">
-    <img src="../images/Kyungwoonedeul-logo.png" class="logo-img" alt="">
-  </a>
-  <!-- 드롭다운 토글 버튼 -->
-  <button class="navbar-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="navbar-toggler-icon" style="font-size: 18px;"></span>
-  </button>
-  <!-- 드롭다운 내용 -->
-  <div class="sidebar dropdown-menu dropdown-menu-end">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-3">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">캠퍼스</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">버스</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          통합정보 시스템 정보
+<body style="height: 100%;">
+  <header>
+
+    <div class="container">
+    </div>
+  </header>
+  <div class="interval"></div>
+  <div class ="main">
+    <div class="contents_title">
+      <h2 style="white-space:pre-wrap;">  하교버스  |  등교버스  </h2>
+    </div> 
+    <div class="contents">
+      <div class="from">
+        <a href="https://bis.gumi.go.kr/city_bus/time_table.do?route_id=19620&brtId=196&remark=%EA%B2%BD%EC%9A%B4%EB%8C%80%ED%95%99%EA%B5%90(%EA%B5%AC%EB%AF%B8%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88%EC%84%BC%ED%84%B0)-%3E%EA%B5%AC%EB%AF%B8%EC%97%AD(%EC%A4%91%EC%95%99%EC%8B%9C%EC%9E%A5)" id="196-from" style="background-color:#eb9980">
+          196
         </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">등교</a></li>
-          <li><a class="dropdown-item" href="#">하교</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          학생 혜택
+        <a href="" id="193-from" style="background-color:#eb9980">
+          193-2
         </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">학생 혜택</a></li>
-          <li><a class="dropdown-item" href="#">통합정보시스템</a></li>
-          <li><a class="dropdown-item" href="#">CopyKiller</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">셔틀버스</a></li>
-        </ul>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
+        
+        <a href="https://bis.gumi.go.kr/city_bus/time_table.do?route_id=883-121&brtId=883-1&remark=%EA%B2%BD%EC%9A%B4%EB%8C%80%ED%95%99%EA%B5%90(%EA%B5%AC%EB%AF%B8%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88%EC%84%BC%ED%84%B0)-%3E%EA%B5%AC%EB%AF%B8%EC%97%AD(%EC%A4%91%EC%95%99%EC%8B%9C%EC%9E%A5)" id="883-1-from" style="background-color:#eb9980">
+          883 - 1
+        </a>
+        <a href="https://bis.gumi.go.kr/city_bus/time_table.do?route_id=884-121&brtId=884-1&remark=%EA%B2%BD%EC%9A%B4%EB%8C%80%ED%95%99%EA%B5%90(%EA%B5%AC%EB%AF%B8%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88%EC%84%BC%ED%84%B0)-%3E%EA%B5%AC%EB%AF%B8%EC%97%AD(%EC%A4%91%EC%95%99%EC%8B%9C%EC%9E%A5)" id="884-1-from" style="background-color:#eb9980">
+          884 - 1
+        </a>
+        <a href="https://bis.gumi.go.kr/city_bus/time_table.do?route_id=891-121&brtId=891-1&remark=%EA%B2%BD%EC%9A%B4%EB%8C%80%ED%95%99%EA%B5%90(%EA%B5%AC%EB%AF%B8%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88%EC%84%BC%ED%84%B0)-%3E%EA%B5%AC%EB%AF%B8%EC%97%AD(%EC%A4%91%EC%95%99%EC%8B%9C%EC%9E%A5)" id="889-1-from" style="background-color:#eb9980">
+          891 - 1
+        </a>
+        <a href="https://bis.gumi.go.kr/city_bus/time_table.do?route_id=92-120&brtId=92-1&remark=%EA%B2%BD%EC%9A%B4%EB%8C%80%ED%95%99%EA%B5%90(%EA%B5%AC%EB%AF%B8%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88%EC%84%BC%ED%84%B0)-%3E%EC%9D%B8%EB%8F%99%EC%A0%95%EB%A5%98%EC%9E%A5%20%EC%A2%85%EC%A0%90" id="92-1-from" style="background-color:#81d8d0">
+          92 - 1
+        </a>
+        <a href="https://bis.gumi.go.kr/city_bus/time_table.do?route_id=92-220&brtId=92-2&remark=%EA%B2%BD%EC%9A%B4%EB%8C%80%ED%95%99%EA%B5%90(%EA%B5%AC%EB%AF%B8%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88%EC%84%BC%ED%84%B0)-%3E%EC%9D%B8%EB%8F%99%EC%A0%95%EB%A5%98%EC%9E%A5%20%EC%A2%85%EC%A0%90" id="92-2-from" style="background-color:#81d8d0">
+          92 - 2
+        </a>
+        <a href="https://bis.gumi.go.kr/city_bus/time_table.do?route_id=8020&brtId=80%20(%EA%B2%BD%EC%9A%B4%EB%8C%80%20%EB%B0%A9%ED%95%99%EA%B8%B0%EA%B0%84%20%EB%AF%B8%EC%9A%B4%ED%96%89)&remark=%EA%B2%BD%EC%9A%B4%EB%8C%80%ED%95%99%EA%B5%90(%EA%B5%AC%EB%AF%B8%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88%EC%84%BC%ED%84%B0)-%3E%EC%9D%B8%EB%8F%99%EC%B0%A8%EA%B3%A0%EC%A7%80" id="80-from" style="background-color:#81d8d0">
+          80(80-1)
+        </a>
+        <a href="https://bis.gumi.go.kr/city_bus/time_table.do?route_id=74-121&brtId=74-1&remark=%EA%B2%BD%EC%9A%B4%EB%8C%80%ED%95%99%EA%B5%90(%EA%B5%AC%EB%AF%B8%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88%EC%84%BC%ED%84%B0)-%3E%EC%84%A0%EC%82%B0%ED%84%B0%EB%AF%B8%EB%84%90%EC%A2%85%EC%A0%90" id="74-1-from">
+          74 - 1
+        </a>
+      </div>
+      <div class="to">
+        <a href="https://bis.gumi.go.kr/city_bus/time_table.do?route_id=19610&brtId=196&remark=%EA%B5%AC%EB%AF%B8%EC%97%AD-%3E%EA%B2%BD%EC%9A%B4%EB%8C%80%ED%95%99%EA%B5%90(%EA%B5%AC%EB%AF%B8%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88%EC%84%BC%ED%84%B0)" id="196-to" style="background-color:#eb9980">
+          196
+        </a>
+        <a href="" id="193-to" style="background-color:#eb9980">
+          193-2
+        </a>
+        <a href="https://bis.gumi.go.kr/city_bus/time_table.do?route_id=883-111&brtId=883-1&remark=%EA%B5%AC%EB%AF%B8%EC%97%AD-%3E%EA%B2%BD%EC%9A%B4%EB%8C%80%ED%95%99%EA%B5%90(%EA%B5%AC%EB%AF%B8%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88%EC%84%BC%ED%84%B0)" id="883-1-to" style="background-color:#eb9980">
+          883 - 1
+        </a>
+        <a href="https://bis.gumi.go.kr/city_bus/time_table.do?route_id=884-111&brtId=884-1&remark=%EA%B5%AC%EB%AF%B8%EC%97%AD-%3E%EA%B2%BD%EC%9A%B4%EB%8C%80%ED%95%99%EA%B5%90(%EA%B5%AC%EB%AF%B8%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88%EC%84%BC%ED%84%B0)" id="884-1-to" style="background-color:#eb9980">
+          884 - 1
+        </a>
+        <a href="https://bis.gumi.go.kr/city_bus/time_table.do?route_id=891-111&brtId=891-1&remark=%EA%B5%AC%EB%AF%B8%EC%97%AD-%3E%EA%B2%BD%EC%9A%B4%EB%8C%80%ED%95%99%EA%B5%90(%EA%B5%AC%EB%AF%B8%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88%EC%84%BC%ED%84%B0)" id="889-1-to" style="background-color:#eb9980">
+          891 - 1
+        </a>
+        <a href="https://bis.gumi.go.kr/city_bus/time_table.do?route_id=92-110&brtId=92-1&remark=%EC%9D%B8%EB%8F%99%EC%A0%95%EB%A5%98%EC%9E%A5(%EC%9D%B8%EB%8F%99%EC%A4%91%ED%95%99%EA%B5%90%EB%B0%A9%EB%A9%B4)-%3E%EA%B2%BD%EC%9A%B4%EB%8C%80%ED%95%99%EA%B5%90(%EA%B5%AC%EB%AF%B8%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88%EC%84%BC%ED%84%B0)" id="92-1-to" style="background-color:#81d8d0">
+          92 - 1
+        </a>
+        <a href="https://bis.gumi.go.kr/city_bus/time_table.do?route_id=92-210&brtId=92-2&remark=%EC%9D%B8%EB%8F%99%EC%A0%95%EB%A5%98%EC%9E%A5(%EC%9D%B8%EB%8F%99%EC%A4%91%ED%95%99%EA%B5%90%EB%B0%A9%EB%A9%B4)-%3E%EA%B2%BD%EC%9A%B4%EB%8C%80%ED%95%99%EA%B5%90(%EA%B5%AC%EB%AF%B8%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88%EC%84%BC%ED%84%B0)" id="92-2-to" style="background-color:#81d8d0">
+          92 - 2
+        </a>
+        <a href="https://bis.gumi.go.kr/city_bus/time_table.do?route_id=8010&brtId=80%20(%EA%B2%BD%EC%9A%B4%EB%8C%80%20%EB%B0%A9%ED%95%99%EA%B8%B0%EA%B0%84%20%EB%AF%B8%EC%9A%B4%ED%96%89)&remark=%EC%9D%B8%EB%8F%99%EC%B0%A8%EA%B3%A0%EC%A7%80-%3E%EA%B2%BD%EC%9A%B4%EB%8C%80%ED%95%99%EA%B5%90(%EA%B5%AC%EB%AF%B8%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88%EC%84%BC%ED%84%B0)" id="80-to" style="background-color:#81d8d0">
+          80(80-1)
+        </a>
+        <a href="https://bis.gumi.go.kr/city_bus/time_table.do?route_id=74-111&brtId=74-1&remark=%EC%84%A0%EC%82%B0%ED%84%B0%EB%AF%B8%EB%84%90%EC%A2%85%EC%A0%90-%3E%EA%B2%BD%EC%9A%B4%EB%8C%80%ED%95%99%EA%B5%90(%EA%B5%AC%EB%AF%B8%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88%EC%84%BC%ED%84%B0)" id="74-1-to">
+          74 - 1
+        </a>
+      </div>
+    </div>
   </div>
-</nav>
-
-<div class="container">
-  <div class="box-link">
-    <button onclick="window.location.href='index.html';" class="link-button">
-      하교 버스
-    </button>
-  </div>
-  <div class="box-link">
-    <button onclick="window.location.href='index.html';" class="link-button">
-      등교 버스
-    </button>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-<script>
-
-</script>
-
+  <footer>
+      <h1>경운대 버스 시간표</h1>
+  </footer>
 </body>
 </html>
