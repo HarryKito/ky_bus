@@ -52,11 +52,11 @@ h3
 
 a /* 사용자 주요 기능버튼 */
 {
-	background-color: #007aff; /* Green */
+	background-color: #007aff;
   	border: 2px solid;
 	padding: 1em;
 	margin:5px;
-	width: 70%;
+	width: 80%;
   	color: white;
   	display: inline-block;
   	font-size: 4vw;
